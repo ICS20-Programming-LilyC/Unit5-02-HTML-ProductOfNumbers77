@@ -1,0 +1,27 @@
+/* Created by: Lily C
+* Created on: 05/08/2023
+* This CSS file defines the style for index.html
+* Unit5-02-HTML-ProductOfNumbers
+*/
+
+body {
+  background-color: darkolivegreen;
+  padding-left: 20px; padding-right: 20px;
+}
+
+h1 {
+  background-color: rgb(181, 131, 74);
+  color: hsl(88deg 38% 15%);
+  padding: 40px;
+  text-align: center;
+}
+
+p {
+  background-color: #283618;
+  color: #fefae0;
+}
+
+#results {
+  background-color: #283618;
+  color: #b5834a;
+}

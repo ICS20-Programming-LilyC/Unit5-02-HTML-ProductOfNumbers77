@@ -40,14 +40,14 @@
     <!--Image-->
     <br>
     <center>
-      <img src = "./images/multiplicationChart.png" alt="Muliplication chart" width="500" length="400">
+      <img src = "./images/multiplicationChart.png" alt="Muliplication chart" width="400" length="400">
     </center>
 
     <!--Text--> 
     <h3>Please enter your input below:</h3>
 
     <!--Form for user input-->
-    <form action="javascript:productNumbers()">
+    <form action="javascript:integersSent()">
       <label for="first number">Enter a positive integer:</label>
       <input type="number" step="1" id="first-number" placeholder="Your first integer">
       <br>
@@ -60,8 +60,10 @@
     <!--Adding id to submit button to style button-->
       <input type="submit" id="calculate" value="Calculate!" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
     </form>
+    <br>
 
     <!--Div results for the number ranges that will be displayed-->
     <div id="results"></div>
+    <br>
   </body>
 </html>

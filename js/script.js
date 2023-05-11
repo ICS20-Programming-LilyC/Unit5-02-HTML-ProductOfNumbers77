@@ -6,39 +6,35 @@
 
 "use strict"
 
-function productNumbers()
+function integersSent() {
 
-// Initializing variable for product to zero.
+  //Initializing product variable and getting numbers from user
   let product = 0;
+  let firstNum = parseInt(document.getElementById("first-number").value);
+  let secondNum = parseInt(document.getElementById("second-number").value);
 
-// Getting the two integers from the user that will be used to calculate their product.
-  let firstNumber = parseInt(document.getElementById("first-number").value);
-  let secondNumber = parseInt(document.getElementById("second-number").value);
-
-// If, textfields are empty or invalid
-  if ((isNaN(firstNumber)) || (isNaN(secondNumber)) || (isEmpty(firstNumber)) || (isEmpty(secondNumber))){
-  message = "Ensure that both numbers are entered.";
+  //If statement to give an error message if nothing nothing is entered or if numbers are invalid
+  if (isNaN(firstNum) || isNaN(secondNum)) {
+    document.getElementById("results").innerHTML = "Please enter valid numbers.";
+    return;
+  }
   
-// Getting the absolute value to do multiplication.
-  let absoluteFirstNumber = Math.abs(firstNumber);
-  let absoluteSecondNumber = Math.abs(secondNumber);
-
-// For loop to repeated addition to determine the product.
-  for (let counter = 1; counter <= absoluteSecondNumber; counter++) {
-    product = product + absoluteFirstNumber;
+  //Else (for if numbers are entered)
+  else {
+    // Take the absolute value to do multiplication
+    let firstNumAbsolute = Math.abs(firstNum);
+    let secondNumAbsolute = Math.abs(secondNum);
+    //For loop to execute repeated addition that will result in the product.
+    for (let counter = 0; counter < secondNumAbsolute; counter++) {
+      product = product + firstNumAbsolute;
+    }
   }
 
- // If, the first number is greater than zero....
-  if (firstNumber < 0) {
+  //If statement to make sure that if one of the numbers is negative, the product will be negative
+  if ((firstNum < 0 && secondNum > 0) || (firstNum > 0 && secondNum < 0)) {
     product = product * -1;
   }
 
-
-  // If, the second number is greater than zero.....
-  if (secondNumber < 0) {
-    product = product * -1;
-  }
-
-  // Displaying the product back to the user.
-  document.getElementById("results").innerHTML = "The product of your selected two numbers is " + product + ".";
+  //Displaying the product of the numbers to the user
+  document.getElementById("results").innerHTML = "The product of your two selected numbers is " + product + ".";
 }
