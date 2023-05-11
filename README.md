@@ -1,1 +1,2 @@
 # Unit5-02-HTML-ProductOfNumbers77
+[![GitHub's Super Linter](https://github.com/ICS20-Programming-LilyC/Unit5-02-HTML-ProductOfNumbers77/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/ICS20-Programming-LilyC/Unit5-02-HTML-ProductOfNumbers77/actions)
