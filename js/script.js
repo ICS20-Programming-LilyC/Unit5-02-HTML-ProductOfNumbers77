@@ -36,5 +36,5 @@ function integersSent() {
   }
 
   //Displaying the product of the numbers to the user
-  document.getElementById("results").innerHTML = "Here are your results: " + (firstNumber + " x " + secondNumber + " = " + product) + " .";
+  document.getElementById("results").innerHTML = (firstNumber + " x " + secondNumber + " = " + product) + " .";
 }
