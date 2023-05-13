@@ -21,7 +21,7 @@ function integersSent() {
     return;
   }
   
-  // Else (for if numbers are entered)
+  // Else (for if numbers are entered).
   else {
 
     // Take the absolute value to do multiplication
@@ -34,12 +34,12 @@ function integersSent() {
     }
   }
 
-  // If statement to make sure that if one of the numbers is negative, the product will be negative
+  // If statement to make sure that if one of the numbers is negative, the product will be negative.
   if ((firstNumber < 0 && secondNumber > 0) || (firstNumber > 0 && secondNumber < 0)) {
     product = product * -1;
   }
 
-  // Displaying the product of the numbers to the user
+  // Displaying the product back to the user.
   document.getElementById("results").innerHTML = "The product of your two selected integers (" + firstNumber + " x " + secondNumber + ") = " + product + ".";
 
 }
