@@ -40,5 +40,6 @@ function integersSent() {
   }
 
   // Displaying the product of the numbers to the user
-  document.getElementById("results").innerHTML = (firstNumber + " x " + secondNumber + " = " + product) + " .";
+  document.getElementById("results").innerHTML = "The product of your two selected integers (" + firstNumber + " x " + secondNumber + ") = " + product + ".";
+
 }
