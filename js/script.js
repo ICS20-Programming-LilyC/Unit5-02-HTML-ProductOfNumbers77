@@ -15,7 +15,7 @@ function integersSent() {
   let firstNumber = parseInt(document.getElementById("first-number").value);
   let secondNumber = parseInt(document.getElementById("second-number").value);
 
-  // If statement to give an error message if nothing nothing is entered or if numbers are invalid.
+  // If statement to give an error message if nothing is entered or if numbers are invalid.
   if (isNaN(firstNumber) || isNaN(secondNumber)) {
     document.getElementById("results").innerHTML = "Please enter valid numbers.";
     return;
